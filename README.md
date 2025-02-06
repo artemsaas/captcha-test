@@ -43,7 +43,7 @@
         }
         .g-recaptcha {
             margin-bottom: 15px;
-            transform: scale(0.55); /* Уменьшаем размер капчи */
+            transform: scale(0.77); /* Уменьшаем размер капчи */
             transform-origin: 0 0; /* Позиционируем уменьшенную капчу в левый верхний угол */
         }
         @media (max-width: 600px) {
@@ -58,7 +58,8 @@
             }
         }
     </style>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- Добавлен параметр hl для языка -->
+    <script src="https://www.google.com/recaptcha/api.js?hl=ru" async defer></script> 
 </head>
 <body>
     <div class="container">
@@ -71,19 +72,4 @@
 
     <script>
         const form = document.getElementById('captchaForm');
-        const redirectUrl = "https://mb9pmr0.meethot-love.com/lwyrlwm?t=kapch"; // Убедитесь, что ссылка правильная
-
-        form.addEventListener('submit', (event) => {
-            event.preventDefault();
-            const response = grecaptcha.getResponse();
-
-            if (response.length === 0) {
-                alert("Пожалуйста, решите капчу!");
-            } else {
-                // Перенаправление после успешного решения капчи
-                window.location.href = redirectUrl;
-            }
-        });
-    </script>
-</body>
-</html>
+        const redire
