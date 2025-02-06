@@ -43,7 +43,7 @@
         }
         .g-recaptcha {
             margin-bottom: 15px;
-            transform: scale(0.77); /* Уменьшаем размер капчи */
+            transform: scale(0.55); /* Уменьшаем размер капчи */
             transform-origin: 0 0; /* Позиционируем уменьшенную капчу в левый верхний угол */
         }
         @media (max-width: 600px) {
